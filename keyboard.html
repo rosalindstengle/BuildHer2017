@@ -1,40 +1,62 @@
-<!DOCTYPE html>
+
 	<head>
-		<title>Butterfl-EYE</title>
+		<title>Keyboard</title>
 		<link rel='stylesheet' type='text/css' href='stylesheet.css'/>
 	</head>
 	
 	<body>
-		<h1>Welcome to Butterfl-EYE!</h1>
-		<p>Description of our project and goals.</p>
-		<p id="demo"></p>
 		<TABLE>
    <TR>
-      <TD><button type="Yes" id="Yes" onclick="myFunction()">Yes</button></TD>
-      <TD><button type="Food" id="Food" onclick="myFunction()">Food</button></TD>
-	  <TD><button type="Medical" id="Medical" onclick="myFunction()">Medical</button></TD>
-      <TD><button type="Emergency" id="Emergency" onclick="myFunction()">Emergency</button></TD>
-	  <TD><button type="Greetings" id="Greetings" onclick="myFunction()">Greetings</button></TD>
-      
+      <TD><button type="a" id="a" onclick="myFunction('a')">a</button></TD>
+	  <TD><button type="letter" id="b" onclick="myFunction('b')">b</button></TD>
+	  <TD><button type="letter" id="c" onclick="myFunction('c')">c</button></TD>
+	  <TD><button type="letter" id="d" onclick="myFunction('d')">d</button></TD>
+	  <TD><button type="letter" id="e" onclick="myFunction('e')">e</button></TD>
+      <TD><button type="letter" id="f" onclick="myFunction('f')">f</button></TD>
+      <TD><button type="letter" id="g" onclick="myFunction('g')">g</button></TD>
    </TR>
    <TR>
-	  <TD><button type="No" id="No" onclick="myFunction()">No</button></TD>
-      <TD><button type="FavoritePhrases" id="FavoritePhrases" onclick="myFunction()">Favorite Phrases</button></TD>
-	  <TD><button type="Hydration" id="Hydration" onclick="myFunction()">Hydration</button></TD>
-      <TD><a href="keyboard.html" class="button">KeyBoard</a></TD>
-	  <TD><button type="CasualConversation" id="CasualConversation" onclick="myFunction()">Casual Conversation</button></TD>
-	  
-	
+	  <TD><button type="letter" id="h" onclick="myFunction('h')">h</button></TD>
+	  <TD><button type="letter" id="i" onclick="myFunction('i')">i</button></TD>
+	  <TD><button type="letter" id="j" onclick="myFunction('j')">j</button></TD>
+      <TD><button type="letter" id="k" onclick="myFunction('k')">k</button></TD>
+      <TD><button type="letter" id="l" onclick="myFunction('l')">l</button></TD>
+	  <TD><button type="letter" id="m" onclick="myFunction('m')">m</button></TD>
+	  <TD><button type="letter" id="n" onclick="myFunction('n')">n</button></TD>
    </TR>
+   <TR>
+   	  <TD><button type="letter" id="o" onclick="myFunction('o')">o</button></TD>
+	  <TD><button type="letter" id="p" onclick="myFunction('p')">p</button></TD>
+	  <TD><button type="letter" id="q" onclick="myFunction('q')">q</button></TD>
+      <TD><button type="letter" id="r" onclick="myFunction('r')">r</button></TD>
+	  <TD><button type="letter" id="s" onclick="myFunction('s')">s</button></TD>
+	  <TD><button type="letter" id="t" onclick="myFunction('t')">t</button></TD>
+	  <TD><button type="letter" id="u" onclick="myFunction('u')">u</button></TD>
+   </TR>
+   <TR>
+	  <TD><button type="letter" id="v" onclick="myFunction('v')">v</button></TD>
+	  <TD><button type="letter" id="w" onclick="myFunction('w')">w</button></TD>
+      <TD><button type="letter" id="x" onclick="myFunction('x')">x</button></TD>
+	  <TD><button type="letter" id="y" onclick="myFunction('y')">y</button></TD>
+	  <TD><button type="letter" id="z" onclick="myFunction('z')">z</button></TD>
+	  <TD><button type="letter" id="Space" onclick="myFunction(' ')">Space</button></TD>
+	  <TD><a href="homepage.html" class="button">Back</a></TD>	  
+   </TR>
+   <p id="demo"></p>
 </TABLE>
 
 
+	<textarea id = myTextarea>Output: </textarea>
 <script>
-  
 
+var oup = "";
+function myFunction(i) {
+
+document.getElementById("myTextarea").innerHTML = document.getElementById("myTextarea").innerHTML + i;
+}
 
 </script>
-<script src="WebGazer.js"></script>
+  <script src="WebGazer.js"></script>
         <script>
 		if (navigator.getUserMedia) {
 			navigator.getUserMedia(
